@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript Fundamentals</title>
+    </head>
+
+    <body>
+        <button>Press me</button>
+        <script>console.log(23 + 97)</script>
+        <script>console.log(1 + 2 + 3 + 4 + 5 + 6)</script>
+        <script>console.log((4 + 6 + 9) / 77)</script>
+        <script>
+            let a = 10; 
+            console.log(a);
+            console.log(a * 9);
+            let b = 7 * a; 
+            console.log(b)
+
+            const max = 57; 
+            let actual = max - 13; 
+            let percentage = actual / max; 
+            console.log(percentage);
+
+            const string = 'The revolution will not "hello"be televised'; 
+            console.log(string);
+
+            const badString = string; 
+            console.log(badString)
+
+            const bigMouth = 'i\'ve got no right to take my place...';
+            console.log(bigMouth);
+
+            let name = "John";
+            let greeting = `Hello ${name}`
+            console.log(greeting);
+
+            let lastName = "Doe";
+            let ultimateGreeting = `${greeting} ${lastName}`;
+            console.log(ultimateGreeting);
+
+
+            const button = document.querySelector("button");
+
+            function greet() {
+                const nameInput =  prompt("What is your name?");
+                alert(`Hello ${nameInput} nice to see you`);
+            }
+            button.addEventListener("click", greet);
+
+            const myString = '123';
+            const myNum = Number(myString);
+            console.log(typeof myNum);
+
+            const myNum2 = 123;
+            const myString2 = myNum2.toString();
+            console.log(typeof myString2);
+
+            // "I like the song Fight the Youth. I gave it a score of 90%."
+            let song = "Fight the Youth";
+            let score = 9;
+            let highScore = 10; 
+
+            let output = `I like the song ${song}. i gave it a score of ${(score/highScore)*100}%`;
+            console.log(output);
+
+            let output2 = `I like the song.
+i gave it a score of 90%`;
+            console.log(output2);
+
+            let output3 = "i like the song. \ni gave it a score of 90%";
+            console.log(output3);
+
+        
+        
+
+
+
+        </script>
+    </body>
+</html>
